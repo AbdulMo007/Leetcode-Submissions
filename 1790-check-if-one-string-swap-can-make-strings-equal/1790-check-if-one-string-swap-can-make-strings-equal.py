@@ -6,8 +6,8 @@ class Solution:
         #do they have the same values?
         #do they have == 2 misplaced values 
         
-        if s1 == s2:
-            return True
+        # if s1 == s2:
+        #     return True
         
         if Counter(s1) != Counter(s2):
             return False 
@@ -15,7 +15,7 @@ class Solution:
         for i in range (len(s1)):
             if s1[i]!=s2[i]:
                 c += 1
-        return c == 2
+        return c <= 2
         
         
         
