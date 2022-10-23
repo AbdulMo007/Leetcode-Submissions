@@ -1,6 +1,18 @@
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
-        nums.sort()
         
-        return (nums[-1]-1)*(nums[-2]-1)
+        b = max(nums)
+        nums.remove(b)
+        c = max(nums)
+        return ((b-1)*(c-1))
+    
         
+        
+        
+        
+# function vs methods
+        
+        
+#         nums.sort()
+        
+#         return (nums[-1]-1)*(nums[-2]-1)
