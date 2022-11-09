@@ -3,16 +3,16 @@
 class Solution:
     def sumOfMatrix(self,N,M,Grid):
         sum = 0
-        for i in range (N):
-            for j in range (M):
+        for i in range (0,N):
+            for j in range (0,M):
                 sum += (Grid[i][j])
         return sum
                 
 
             
-#Grid=
-# [[1,0,1],
-# [-8,9,-2]]
+  #   0,1,2
+# 0 [[1,0,1],
+# 1 [-8,9,-2]]
 
 
             
