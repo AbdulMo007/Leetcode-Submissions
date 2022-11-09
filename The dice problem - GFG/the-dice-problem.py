@@ -2,7 +2,25 @@
 
 class Solution:
     def oppositeFaceOfDice(self, N):
-        oxf = {1:6, 2:5, 3:4, 4:3, 5:2, 6:1}
+        k = []
+        
+        for i in range (1, 7): #1000
+            k.append(i)
+        i = 0
+        j = len(k)-1
+        
+        while i<=j:
+            if k[i] == N:
+                return k[j]
+            elif k[j] == N:
+                return k[i]
+            i += 1
+            j -= 1
+                
+            
+            
+
+                
         
         return oxf[N]
             
