@@ -1,5 +1,6 @@
 SELECT name as Customers
-FROM Customers 
+FROM Customers
 WHERE id NOT IN
-(SELECT customerId 
-FROM orders) 
+(select customerid from customers
+inner join orders
+on customers.id=orders.customerId);
